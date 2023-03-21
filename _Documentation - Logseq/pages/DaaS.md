@@ -7,7 +7,7 @@
 		- [[NodeRed]]
 			- This acts as the proxy between Directus and the other services, eg when a container is updated or changed - information is sent to NodeRed to process what got changed and then forwards the new information to the other services like NPM or DockerNursary.
 		- [[Appsmith]]
-			- This is the front facing Web UI that will be doing API calls to Directs to present information to the user.
+			- This is the front facing Web UI that will be doing API calls to Directus to present information to the user.
 		- [[Nginx Proxy Manager]] (NPM)
 			- This is the Reverse Proxy that's going to be used - all the information in this will be automated by NodeRed and when Directus entries are updated
 		- [[Directus]]
