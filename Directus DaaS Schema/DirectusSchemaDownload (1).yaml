@@ -1,0 +1,3165 @@
+version: 1
+directus: 9.23.1
+vendor: mysql
+collections:
+  - collection: Administration
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Administration
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: folder
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 4
+      sort_field: null
+      translations: null
+      unarchive_value: null
+  - collection: Container
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Container
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Container
+  - collection: Container_Environments_1
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Container_Environments_1
+      color: null
+      display_template: null
+      group: null
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: null
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Container_Environments_1
+  - collection: Container_Port
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Container_Port
+      color: null
+      display_template: '{{Port}}:{{Image_Port.Port}}'
+      group: Container
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Container_Port
+  - collection: Deployment_Policies
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Deployment_Policies
+      color: null
+      display_template: null
+      group: Policies
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Deployment_Policies
+  - collection: Deployments
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Deployments
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: folder
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 3
+      sort_field: null
+      translations: null
+      unarchive_value: null
+  - collection: Environments
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Environments
+      color: null
+      display_template: '{{Environment.Environment_ID}}'
+      group: Image
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Environments
+  - collection: Image
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Image
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Image
+  - collection: Image_Paths
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Image_Paths
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 5
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Image_Paths
+  - collection: List_of_Environments
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: List_of_Environments
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 6
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: List_of_Environments
+  - collection: List_of_Internal_Ports
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: List_of_Internal_Ports
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 7
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: List_of_Internal_Ports
+  - collection: Paths
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Paths
+      color: null
+      display_template: null
+      group: Image
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 3
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Paths
+  - collection: Policies
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Policies
+      color: null
+      display_template: null
+      group: Administration
+      hidden: false
+      icon: folder
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 3
+      sort_field: null
+      translations: null
+      unarchive_value: null
+  - collection: Portainer_Edge_Agents
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Portainer_Edge_Agents
+      color: null
+      display_template: null
+      group: Administration
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Portainer_Edge_Agents
+  - collection: Ports
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: Ports
+      color: null
+      display_template: '{{Port}} | {{Scheme}} | {{Description}}'
+      group: Image
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: Ports
+  - collection: User_Containers
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: User_Containers
+      color: null
+      display_template: null
+      group: Deployments
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 3
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: User_Containers
+  - collection: User_Endpoints
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: User_Endpoints
+      color: null
+      display_template: null
+      group: Deployments
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: User_Endpoints
+  - collection: User_Slugs
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: User_Slugs
+      color: null
+      display_template: null
+      group: Administration
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: User_Slugs
+  - collection: User_Stacks
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: User_Stacks
+      color: null
+      display_template: null
+      group: Deployments
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: User_Stacks
+  - collection: User_Volumes
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: User_Volumes
+      color: null
+      display_template: null
+      group: Deployments
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      singleton: false
+      sort: 4
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      name: User_Volumes
+fields:
+  - collection: Container
+    field: Environments
+    type: alias
+    meta:
+      collection: Container
+      field: Environments
+      special:
+        - m2m
+      interface: list-m2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: Container
+    field: ID
+    type: string
+    meta:
+      collection: Container
+      conditions: null
+      display: null
+      display_options: null
+      field: ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: ID
+      table: Container
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Container
+    field: Image
+    type: string
+    meta:
+      collection: Container
+      conditions: null
+      display: null
+      display_options: null
+      field: Image
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Image
+      table: Container
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Image
+      foreign_key_column: ID
+  - collection: Container
+    field: Ports
+    type: alias
+    meta:
+      collection: Container
+      field: Ports
+      special:
+        - o2m
+      interface: list-o2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: Container_Environments_1
+    field: Container_ID
+    type: string
+    meta:
+      collection: Container_Environments_1
+      conditions: null
+      display: null
+      display_options: null
+      field: Container_ID
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Container_ID
+      table: Container_Environments_1
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Container
+      foreign_key_column: ID
+  - collection: Container_Environments_1
+    field: Environments_Environment_ID
+    type: string
+    meta:
+      collection: Container_Environments_1
+      conditions: null
+      display: null
+      display_options: null
+      field: Environments_Environment_ID
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Environments_Environment_ID
+      table: Container_Environments_1
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Environments
+      foreign_key_column: Environment_ID
+  - collection: Container_Environments_1
+    field: id
+    type: integer
+    meta:
+      collection: Container_Environments_1
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Container_Environments_1
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Container_Port
+    field: Container
+    type: string
+    meta:
+      collection: Container_Port
+      conditions: null
+      display: null
+      display_options: null
+      field: Container
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Container
+      table: Container_Port
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Container
+      foreign_key_column: ID
+  - collection: Container_Port
+    field: ID
+    type: uuid
+    meta:
+      collection: Container_Port
+      conditions: null
+      display: null
+      display_options: null
+      field: ID
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - uuid
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: ID
+      table: Container_Port
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Container_Port
+    field: Image_Port
+    type: string
+    meta:
+      collection: Container_Port
+      conditions: null
+      display: null
+      display_options: null
+      field: Image_Port
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Image_Port
+      table: Container_Port
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Ports
+      foreign_key_column: ID
+  - collection: Container_Port
+    field: Port
+    type: integer
+    meta:
+      collection: Container_Port
+      conditions: null
+      display: null
+      display_options: null
+      field: Port
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Port
+      table: Container_Port
+      data_type: int
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Allow_Custom_External_Ports
+    type: boolean
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Allow_Custom_External_Ports
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Allow_Custom_External_Ports
+      table: Deployment_Policies
+      data_type: boolean
+      default_value: false
+      max_length: null
+      numeric_precision: 3
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Allow_Private_Named_Containers
+    type: boolean
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Allow_Private_Named_Containers
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Allow_Private_Named_Containers
+      table: Deployment_Policies
+      data_type: boolean
+      default_value: false
+      max_length: null
+      numeric_precision: 3
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Allow_Private_Named_Volumes
+    type: boolean
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Allow_Private_Named_Volumes
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Allow_Private_Named_Volumes
+      table: Deployment_Policies
+      data_type: boolean
+      default_value: false
+      max_length: null
+      numeric_precision: 3
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Container_Deployment_Limit
+    type: integer
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Container_Deployment_Limit
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        min: -1
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Container_Deployment_Limit
+      table: Deployment_Policies
+      data_type: int
+      default_value: 10
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Endpoint_Limit
+    type: integer
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Endpoint_Limit
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        max: null
+        min: -1
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Endpoint_Limit
+      table: Deployment_Policies
+      data_type: int
+      default_value: 1
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Policy_ID
+    type: string
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Policy_ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Policy_ID
+      table: Deployment_Policies
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Deployment_Policies
+    field: Stack_Deployment_Limit
+    type: float
+    meta:
+      collection: Deployment_Policies
+      conditions: null
+      display: null
+      display_options: null
+      field: Stack_Deployment_Limit
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: {}
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Stack_Deployment_Limit
+      table: Deployment_Policies
+      data_type: float
+      default_value: 1
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 5
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Environments
+    field: Default_Value
+    type: string
+    meta:
+      collection: Environments
+      conditions: null
+      display: null
+      display_options: null
+      field: Default_Value
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Default_Value
+      table: Environments
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Environments
+    field: Description
+    type: string
+    meta:
+      collection: Environments
+      conditions: null
+      display: null
+      display_options: null
+      field: Description
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Description
+      table: Environments
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Environments
+    field: Environment
+    type: string
+    meta:
+      collection: Environments
+      conditions: null
+      display: null
+      display_options: null
+      field: Environment
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Environment
+      table: Environments
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: List_of_Environments
+      foreign_key_column: Environment_ID
+  - collection: Environments
+    field: Environment_ID
+    type: uuid
+    meta:
+      collection: Environments
+      conditions: null
+      display: null
+      display_options: null
+      field: Environment_ID
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special:
+        - uuid
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Environment_ID
+      table: Environments
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Environments
+    field: Image
+    type: string
+    meta:
+      collection: Environments
+      conditions: null
+      display: null
+      display_options: null
+      field: Image
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Image
+      table: Environments
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Image
+      foreign_key_column: ID
+  - collection: Image
+    field: Description
+    type: string
+    meta:
+      collection: Image
+      conditions: null
+      display: null
+      display_options: null
+      field: Description
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 5
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Description
+      table: Image
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Image
+    field: Environments
+    type: alias
+    meta:
+      collection: Image
+      field: Environments
+      special:
+        - o2m
+      interface: list-o2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: Image
+    field: ID
+    type: string
+    meta:
+      collection: Image
+      conditions: null
+      display: null
+      display_options: null
+      field: ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: ID
+      table: Image
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Image
+    field: Icon
+    type: uuid
+    meta:
+      collection: Image
+      conditions: null
+      display: null
+      display_options: null
+      field: Icon
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: Icon
+      table: Image
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: Image
+    field: Image_Name
+    type: string
+    meta:
+      collection: Image
+      conditions: null
+      display: null
+      display_options: null
+      field: Image_Name
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: Image_Name
+      table: Image
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Image
+    field: Paths
+    type: alias
+    meta:
+      collection: Image
+      field: Paths
+      special:
+        - m2m
+      interface: list-m2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: Image
+    field: Ports
+    type: alias
+    meta:
+      collection: Image
+      field: Ports
+      special:
+        - o2m
+      interface: list-o2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: Image
+    field: Tag
+    type: string
+    meta:
+      collection: Image
+      conditions: null
+      display: null
+      display_options: null
+      field: Tag
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: Tag
+      table: Image
+      data_type: varchar
+      default_value: latest
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Image_Paths
+    field: Image_ID
+    type: string
+    meta:
+      collection: Image_Paths
+      conditions: null
+      display: null
+      display_options: null
+      field: Image_ID
+      group: null
+      hidden: false
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Image_ID
+      table: Image_Paths
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Image
+      foreign_key_column: ID
+  - collection: Image_Paths
+    field: Paths_ID
+    type: string
+    meta:
+      collection: Image_Paths
+      conditions: null
+      display: null
+      display_options: null
+      field: Paths_ID
+      group: null
+      hidden: false
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Paths_ID
+      table: Image_Paths
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Paths
+      foreign_key_column: ID
+  - collection: Image_Paths
+    field: id
+    type: integer
+    meta:
+      collection: Image_Paths
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: Image_Paths
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: List_of_Environments
+    field: Environment_ID
+    type: string
+    meta:
+      collection: List_of_Environments
+      conditions: null
+      display: null
+      display_options: null
+      field: Environment_ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Environment_ID
+      table: List_of_Environments
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: List_of_Internal_Ports
+    field: Port_Number
+    type: integer
+    meta:
+      collection: List_of_Internal_Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: Port_Number
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Port_Number
+      table: List_of_Internal_Ports
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Paths
+    field: ID
+    type: string
+    meta:
+      collection: Paths
+      conditions: null
+      display: null
+      display_options: null
+      field: ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: ID
+      table: Paths
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Portainer_Edge_Agents
+    field: EdgeID
+    type: string
+    meta:
+      collection: Portainer_Edge_Agents
+      conditions: null
+      display: null
+      display_options: null
+      field: EdgeID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: EdgeID
+      table: Portainer_Edge_Agents
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Portainer_Edge_Agents
+    field: Id
+    type: string
+    meta:
+      collection: Portainer_Edge_Agents
+      conditions: null
+      display: null
+      display_options: null
+      field: Id
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Id
+      table: Portainer_Edge_Agents
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Portainer_Edge_Agents
+    field: Name
+    type: string
+    meta:
+      collection: Portainer_Edge_Agents
+      conditions: null
+      display: null
+      display_options: null
+      field: Name
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Name
+      table: Portainer_Edge_Agents
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Portainer_Edge_Agents
+    field: PublicURL
+    type: string
+    meta:
+      collection: Portainer_Edge_Agents
+      conditions: null
+      display: null
+      display_options: null
+      field: PublicURL
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: PublicURL
+      table: Portainer_Edge_Agents
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Ports
+    field: Description
+    type: string
+    meta:
+      collection: Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: Description
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 7
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Description
+      table: Ports
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Ports
+    field: Endpoint
+    type: boolean
+    meta:
+      collection: Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: Endpoint
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options:
+        colorOn: '#50C700'
+      readonly: false
+      required: false
+      sort: 5
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Endpoint
+      table: Ports
+      data_type: boolean
+      default_value: null
+      max_length: null
+      numeric_precision: 3
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Ports
+    field: ID
+    type: uuid
+    meta:
+      collection: Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: ID
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special:
+        - uuid
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: ID
+      table: Ports
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: Ports
+    field: Image
+    type: string
+    meta:
+      collection: Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: Image
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 4
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Image
+      table: Ports
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Image
+      foreign_key_column: ID
+  - collection: Ports
+    field: Port
+    type: integer
+    meta:
+      collection: Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: Port
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Port
+      table: Ports
+      data_type: int unsigned
+      default_value: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: List_of_Internal_Ports
+      foreign_key_column: Port_Number
+  - collection: Ports
+    field: Scheme
+    type: string
+    meta:
+      collection: Ports
+      conditions: null
+      display: null
+      display_options: null
+      field: Scheme
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: HTTP
+            value: http
+          - text: HTTPS
+            value: https
+      readonly: false
+      required: false
+      sort: 6
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Scheme
+      table: Ports
+      data_type: varchar
+      default_value: http
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Containers
+    field: Assigned_Stack
+    type: string
+    meta:
+      collection: User_Containers
+      conditions: null
+      display: null
+      display_options: null
+      field: Assigned_Stack
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Assigned_Stack
+      table: User_Containers
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: User_Stacks
+      foreign_key_column: Stack_ID
+  - collection: User_Containers
+    field: Container_Base
+    type: string
+    meta:
+      collection: User_Containers
+      conditions: null
+      display: null
+      display_options: null
+      field: Container_Base
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Container_Base
+      table: User_Containers
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Container
+      foreign_key_column: ID
+  - collection: User_Containers
+    field: Container_ID
+    type: uuid
+    meta:
+      collection: User_Containers
+      conditions: null
+      display: null
+      display_options: null
+      field: Container_ID
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special:
+        - uuid
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Container_ID
+      table: User_Containers
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Containers
+    field: Container_Restart_Policy
+    type: string
+    meta:
+      collection: User_Containers
+      conditions: null
+      display: null
+      display_options: null
+      field: Container_Restart_Policy
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: Always
+            value: always
+      readonly: false
+      required: false
+      sort: 4
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Container_Restart_Policy
+      table: User_Containers
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Endpoints
+    field: Assigned_User
+    type: string
+    meta:
+      collection: User_Endpoints
+      conditions: null
+      display: null
+      display_options: null
+      field: Assigned_User
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Assigned_User
+      table: User_Endpoints
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: User_Endpoints
+    field: Endpoint_ID
+    type: uuid
+    meta:
+      collection: User_Endpoints
+      conditions: null
+      display: null
+      display_options: null
+      field: Endpoint_ID
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - uuid
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Endpoint_ID
+      table: User_Endpoints
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Slugs
+    field: Assigned_User
+    type: string
+    meta:
+      collection: User_Slugs
+      conditions: null
+      display: null
+      display_options: null
+      field: Assigned_User
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Assigned_User
+      table: User_Slugs
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: User_Slugs
+    field: Slug_ID
+    type: string
+    meta:
+      collection: User_Slugs
+      conditions: null
+      display: null
+      display_options: null
+      field: Slug_ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Slug_ID
+      table: User_Slugs
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Stacks
+    field: Assigned_to_User
+    type: string
+    meta:
+      collection: User_Stacks
+      conditions: null
+      display: null
+      display_options: null
+      field: Assigned_to_User
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Assigned_to_User
+      table: User_Stacks
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: User_Stacks
+    field: Stack_ID
+    type: uuid
+    meta:
+      collection: User_Stacks
+      conditions: null
+      display: null
+      display_options: null
+      field: Stack_ID
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - uuid
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Stack_ID
+      table: User_Stacks
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Stacks
+    field: Stack_Name
+    type: string
+    meta:
+      collection: User_Stacks
+      conditions: null
+      display: null
+      display_options: null
+      field: Stack_Name
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Stack_Name
+      table: User_Stacks
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: User_Volumes
+    field: Assigned_User
+    type: string
+    meta:
+      collection: User_Volumes
+      conditions: null
+      display: null
+      display_options: null
+      field: Assigned_User
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Assigned_User
+      table: User_Volumes
+      data_type: char
+      default_value: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: User_Volumes
+    field: Volume_ID
+    type: string
+    meta:
+      collection: User_Volumes
+      conditions: null
+      display: null
+      display_options: null
+      field: Volume_ID
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Volume_ID
+      table: User_Volumes
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: directus_users
+    field: Assigned_Stacks
+    type: alias
+    meta:
+      collection: directus_users
+      field: Assigned_Stacks
+      special:
+        - o2m
+      interface: list-o2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: directus_users
+    field: Assigned_Volumes
+    type: alias
+    meta:
+      collection: directus_users
+      field: Assigned_Volumes
+      special:
+        - o2m
+      interface: list-o2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: directus_users
+    field: Subscription_Model
+    type: string
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: Subscription_Model
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: Subscription_Model
+      table: directus_users
+      data_type: varchar
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: Deployment_Policies
+      foreign_key_column: Policy_ID
+relations:
+  - collection: Container
+    field: Image
+    related_collection: Image
+    meta:
+      junction_field: null
+      many_collection: Container
+      many_field: Image
+      one_allowed_collections: null
+      one_collection: Image
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Shared_Containers
+      sort_field: null
+    schema:
+      table: Container
+      column: Image
+      foreign_key_table: Image
+      foreign_key_column: ID
+      constraint_name: container_image_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Container_Environments_1
+    field: Container_ID
+    related_collection: Container
+    meta:
+      junction_field: Environments_Environment_ID
+      many_collection: Container_Environments_1
+      many_field: Container_ID
+      one_allowed_collections: null
+      one_collection: Container
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Environments
+      sort_field: null
+    schema:
+      table: Container_Environments_1
+      column: Container_ID
+      foreign_key_table: Container
+      foreign_key_column: ID
+      constraint_name: container_environments_1_container_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Container_Environments_1
+    field: Environments_Environment_ID
+    related_collection: Environments
+    meta:
+      junction_field: Container_ID
+      many_collection: Container_Environments_1
+      many_field: Environments_Environment_ID
+      one_allowed_collections: null
+      one_collection: Environments
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Container_Environments_1
+      column: Environments_Environment_ID
+      foreign_key_table: Environments
+      foreign_key_column: Environment_ID
+      constraint_name: container_environments_1_environments_environment_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Container_Port
+    field: Container
+    related_collection: Container
+    meta:
+      junction_field: null
+      many_collection: Container_Port
+      many_field: Container
+      one_allowed_collections: null
+      one_collection: Container
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Ports
+      sort_field: null
+    schema:
+      table: Container_Port
+      column: Container
+      foreign_key_table: Container
+      foreign_key_column: ID
+      constraint_name: container_port_container_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Container_Port
+    field: Image_Port
+    related_collection: Ports
+    meta:
+      junction_field: null
+      many_collection: Container_Port
+      many_field: Image_Port
+      one_allowed_collections: null
+      one_collection: Ports
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Host_Port
+      sort_field: null
+    schema:
+      table: Container_Port
+      column: Image_Port
+      foreign_key_table: Ports
+      foreign_key_column: ID
+      constraint_name: container_port_image_port_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Environments
+    field: Environment
+    related_collection: List_of_Environments
+    meta:
+      junction_field: null
+      many_collection: Environments
+      many_field: Environment
+      one_allowed_collections: null
+      one_collection: List_of_Environments
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Environments
+      column: Environment
+      foreign_key_table: List_of_Environments
+      foreign_key_column: Environment_ID
+      constraint_name: environments_environment_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Environments
+    field: Image
+    related_collection: Image
+    meta:
+      junction_field: null
+      many_collection: Environments
+      many_field: Image
+      one_allowed_collections: null
+      one_collection: Image
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Environments
+      sort_field: null
+    schema:
+      table: Environments
+      column: Image
+      foreign_key_table: Image
+      foreign_key_column: ID
+      constraint_name: environments_image_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Image
+    field: Icon
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: Image
+      many_field: Icon
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Image
+      column: Icon
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: image_icon_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Image_Paths
+    field: Image_ID
+    related_collection: Image
+    meta:
+      junction_field: Paths_ID
+      many_collection: Image_Paths
+      many_field: Image_ID
+      one_allowed_collections: null
+      one_collection: Image
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Paths
+      sort_field: null
+    schema:
+      table: Image_Paths
+      column: Image_ID
+      foreign_key_table: Image
+      foreign_key_column: ID
+      constraint_name: image_paths_image_id_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
+  - collection: Image_Paths
+    field: Paths_ID
+    related_collection: Paths
+    meta:
+      junction_field: Image_ID
+      many_collection: Image_Paths
+      many_field: Paths_ID
+      one_allowed_collections: null
+      one_collection: Paths
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Image_Paths
+      column: Paths_ID
+      foreign_key_table: Paths
+      foreign_key_column: ID
+      constraint_name: image_paths_paths_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Ports
+    field: Image
+    related_collection: Image
+    meta:
+      junction_field: null
+      many_collection: Ports
+      many_field: Image
+      one_allowed_collections: null
+      one_collection: Image
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Ports
+      sort_field: null
+    schema:
+      table: Ports
+      column: Image
+      foreign_key_table: Image
+      foreign_key_column: ID
+      constraint_name: ports_image_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: Ports
+    field: Port
+    related_collection: List_of_Internal_Ports
+    meta:
+      junction_field: null
+      many_collection: Ports
+      many_field: Port
+      one_allowed_collections: null
+      one_collection: List_of_Internal_Ports
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: Ports
+      column: Port
+      foreign_key_table: List_of_Internal_Ports
+      foreign_key_column: Port_Number
+      constraint_name: ports_port_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: User_Containers
+    field: Assigned_Stack
+    related_collection: User_Stacks
+    meta:
+      junction_field: null
+      many_collection: User_Containers
+      many_field: Assigned_Stack
+      one_allowed_collections: null
+      one_collection: User_Stacks
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: User_Containers
+      column: Assigned_Stack
+      foreign_key_table: User_Stacks
+      foreign_key_column: Stack_ID
+      constraint_name: user_containers_assigned_stack_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: User_Containers
+    field: Container_Base
+    related_collection: Container
+    meta:
+      junction_field: null
+      many_collection: User_Containers
+      many_field: Container_Base
+      one_allowed_collections: null
+      one_collection: Container
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: User_Containers
+      column: Container_Base
+      foreign_key_table: Container
+      foreign_key_column: ID
+      constraint_name: user_containers_container_base_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: User_Endpoints
+    field: Assigned_User
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: User_Endpoints
+      many_field: Assigned_User
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: User_Endpoints
+      column: Assigned_User
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: user_endpoints_assigned_user_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: User_Slugs
+    field: Assigned_User
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: User_Slugs
+      many_field: Assigned_User
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: User_Slugs
+      column: Assigned_User
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: user_slugs_assigned_user_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: User_Stacks
+    field: Assigned_to_User
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: User_Stacks
+      many_field: Assigned_to_User
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: delete
+      one_field: Assigned_Stacks
+      sort_field: null
+    schema:
+      table: User_Stacks
+      column: Assigned_to_User
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: user_stacks_assigned_to_user_foreign
+      on_update: RESTRICT
+      on_delete: CASCADE
+  - collection: User_Volumes
+    field: Assigned_User
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: User_Volumes
+      many_field: Assigned_User
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: Assigned_Volumes
+      sort_field: null
+    schema:
+      table: User_Volumes
+      column: Assigned_User
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: user_volumes_assigned_user_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+  - collection: directus_users
+    field: Subscription_Model
+    related_collection: Deployment_Policies
+    meta:
+      junction_field: null
+      many_collection: directus_users
+      many_field: Subscription_Model
+      one_allowed_collections: null
+      one_collection: Deployment_Policies
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: directus_users
+      column: Subscription_Model
+      foreign_key_table: Deployment_Policies
+      foreign_key_column: Policy_ID
+      constraint_name: directus_users_subscription_model_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
