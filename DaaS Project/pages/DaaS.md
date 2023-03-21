@@ -1,0 +1,16 @@
+- ## Introduction
+	- ### What is Dass?
+		- DaaS stands for Docker as a Service
+	- ### What core applications are being used in DaaS
+		- [[Portainer]] API
+			- Acting as the Container deployment system - essentially everything will be deployed as a stack as its easier to debug ( and this may later change) and see how the stack deployment compares to what Directus is saying it supposed to be.
+		- [[NodeRed]]
+			- This acts as the proxy between Directus and the other services, eg when a container is updated or changed - information is sent to NodeRed to process what got changed and then forwards the new information to the other services like NPM or DockerNursary.
+		- [[Appsmith]]
+			- This is the front facing Web UI that will be doing API calls to Directs to prosent information to the user.
+		- [[Nginx Proxy Manager]] (NPM)
+			- This is the Reverse Proxy that's going to be used - all the information in this will be automated by NodeRed and when Directus entries are updated
+		- [[Directus]]
+			- This is the full API backend, this will manage Appsmith Users, Images, Container templates,  Deployment information, Deployment policies, Resources
+	- ### How will it function:
+		- tl:dr User can select out of a list of containers they can add to their stack - with either pre-populated environmental variables or ones they choose themselves, this will then automagically create an https endpoint for them to access their container web UI from
