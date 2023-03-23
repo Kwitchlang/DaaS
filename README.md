@@ -1,6 +1,6 @@
 # DaaS
 
-**How to get started** - Well unfortunatly a lot of it isn't connected up - and I will also need to sanatize the data too.
+**How to get started** - Well unfortunatly a lot of it isn't connected up - and I will also need to sanatize the data too before releasing the files.
 
 Once thats done and there is a production release, I will upload the files here and provide a tutorial video on setting it up from scratch. 
 
