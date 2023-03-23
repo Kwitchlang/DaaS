@@ -43,6 +43,7 @@ NodeRED - What i call the DaaS translation layer - this is what binds NPM
 
 *   User creation and login to Appsmith
 *   At the moment I'm having to focus a lot of my time on the Directus Scheme - as this is the hardest thing to change once a collection has been created - so this needs the upmost focus - so alot of it about creating the tools required, then piecing it all together.
+*   I have been working on all the pieces that will be needed to put it all together - as there are so many working parts and components - this will take time.
 
 ### To-do
 
@@ -51,7 +52,7 @@ Too damn much - Its only me working on this project!
 *   Design a database schema thats not too time consuming to manage , while being flexable to use in as it needs to cover many deployment scenarios.
 *   Create a UI using Appsmith that doesnt make you have to click on a million things for one thing to happen. - it should be a one-stop-shop.
 *   Then link everything together to ensure updates and API are working correctly - I'm doing my best to createa  modular API Schema structure  in NodeRED where if something drastic changes in Directus - Updating NodeRED and Appsmith should be a fairly easy process - after all, its just data!
-*   Eventually adding the awesome features this project needs - So i'm trying not to 'feature creep' on this project - I just need to get it working first! 
+*   Eventually adding the awesome features this project needs - So i'm trying not to 'feature creep' on this project - I just need to get it working first!
 
 # Images
 
